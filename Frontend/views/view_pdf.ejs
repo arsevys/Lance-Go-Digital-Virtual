@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+</head>
+<body>
+
+    <button onclick="ver()">click</button>
+    <script>
+
+        function ver(){
+   
+
+
+		var adobeDCView = new AdobeDC.View({clientId: "1350b4ec7a714669881c80809a8182ad"});
+		adobeDCView.previewFile({
+			content:{location: {url: "/assets/arsevys-sign.pdf"}}
+			// metaData:{fileName: "Bodea Brochure.pdf"}
+		}, {embedMode: "LIGHT_BOX", defaultViewMode: "FIT_PAGE"});
+
+
+        }
+    </script>
+</body>
+</html>
